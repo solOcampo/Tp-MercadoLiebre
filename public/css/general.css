@@ -1,23 +1,18 @@
 
-*{
-    font-family: var(--fuenteRoboto);
-}
-    ul {
-    color: black;
-    text-decoration: none;
+*{box-sizing: border-box;
+    margin: 0;
     padding: 0;
-}
-/* li{
-    color: black;
-    text-decoration: none;
+    font-family: var(--FuentePrincipal);
    
-    padding: 0;
-} */
-
-a{
+}
+a {
     color: black;
     text-decoration: none;
-  
+    padding: 0;
 }
 
+li{
+    list-style: none;
+
+}
 

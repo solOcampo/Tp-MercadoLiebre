@@ -1,5 +1,7 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
 
 :root{
@@ -11,4 +13,17 @@
     --Verde: #39b54a;
     --fuenteRoboto:'Roboto', sans-serif;
     --fuenteRoboto2:'Rancho', cursive;
+    --cuerpo-de-texto:12px;
+    --titulares:24px;
+    --precios:18px;
+    --descuentosYdescripciones:16px;
+    /* fuente */
+    --FuentePrincipal:'Roboto', sans-serif;
+    /* Tamaños tipograficos */
+    --cuerpo-de-texto:12px;
+    --titulares:24px;
+    --precios:18px;
+    --descuentosYdescripciones:16px;
+
+
 }
