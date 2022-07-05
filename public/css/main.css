@@ -1,5 +1,77 @@
 main{
-    background-color:white;
-    text-align: center;
-     margin: 11px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px 0;
+}
+main .banner{
+    display: none;
+}
+main section{
+    padding: 20px 0;
+
+}
+main section h2{
+    font-size: var(--titulares);
+    color: var(--Grisoscuro);
+
+}
+main section article{
+    margin: 10px 0;
+    
+}
+main section article img{
+    width: 100%;
+}
+
+main section article {
+    background-color: white;
+
+}
+main section article .contenedor{
+    border-top: 1px solid var(--Grisclaro);
+
+}
+main section article .camion,main section article .descuento{
+    color: var(--Verde);
+}
+main section article .camion i{
+    color: var(--Verde);
+    padding: 10px;
+    border: 1px solid var(--Verde);
+    border-radius: 50%;
+    font-size: var(--cuerpo-de-texto);
+
+}
+
+main section article.precio{
+font-size: var(--precios);
+}
+
+main section article.descuento{
+    font-size: var(--descuentosYdescripciones);
+   
+
+}
+main section article h4{
+    display: none;
+    margin-top: 20px;
+    color: var(--Grisoscuro);
+    font-size: var(--descuentosYdescripciones);
+}
+
+/* tablet */
+@media (min-width:461px){
+
+    main section article{
+        box-shadow: 0px 0px 10px var(--Grisoscuro);
+    }
+    main section article h4{
+        display: block;
+    }
+    
+
+}
+/* deskotop */
+@media (min-width:769px){
+    
 }

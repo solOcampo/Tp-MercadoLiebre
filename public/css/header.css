@@ -27,7 +27,9 @@ header p{
     text-align: center;
 
 }
-
+header .links{
+    display: none;
+}
 header .links ul{
    margin:0 0 20px ; 
 
@@ -49,4 +51,23 @@ header .burger i{
     border-radius: 6px;
     font-size: var(--titulares);
 
+}
+
+/* tablet */
+@media (min-width:461px){
+    header .links{
+        display: block;
+    }
+
+    header .burger i{
+        display: none;
+    
+    }
+
+    
+
+}
+/* deskotop */
+@media (min-width:769px){
+    
 }

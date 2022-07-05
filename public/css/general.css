@@ -5,6 +5,9 @@
     font-family: var(--FuentePrincipal);
    
 }
+body{
+    background-color:var(--Grisclaro);
+}
 a {
     color: black;
     text-decoration: none;
