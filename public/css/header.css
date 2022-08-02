@@ -1,73 +1,106 @@
 header{
-    padding: 20px 0;
-    color:black;
-    text-decoration: none;
+   padding: 20px 0;
     background-color:var(--Amarillo);
-    font-size: var(--cuerpo-de-texto);
+    /* font-size: var(--cuerpo-de-texto); */
   
 
 }
-header .logo ,header .searchBar{
-    margin: 0 10px;
+header .logo{
+    width: 35%;
 }
 
-header .logo .img{
-   width: 45%;
+header .searchBar{
+    position: absolute;
+    top:1;
+    display: inline-flex;
 }
-header .searchBar i{
-    padding: 1px;
-    border-radius: 4px;
+header .searchBar input{
     background-color: white;
-    border: 1px solid var(--Grisoscuro);
-    font-size: 16px;
+    padding: 10px; 
+    margin-left: 8px;
+    border: none;
 }
 
-header p{
+header .searchBar button{
+    background-color: white;
+    border: none;
+}
+header h4{
     margin: 20px 0;
     text-align: center;
 
 }
-header .links{
+header .nav1, .nav2{
     display: none;
-}
-header .links ul{
-   margin:0 0 20px ; 
-
-} 
-header .links ul i{
-    margin: 0 3px;
+ 
 
 }
+
 header .burger{
-    text-align: center;
-
-}
-
-header .burger i{
-    background-color: var(--Celeste);
-    color: white;
-    margin: 10px;
     padding: 10px;
-    border-radius: 6px;
-    font-size: var(--titulares);
-
+    display: block;
+    margin: 0 auto;
+    background-color: var(--Celeste);
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    border: none;
 }
 
 /* tablet */
 @media (min-width:461px){
-    header .links{
+   
+     header .searchBar{
+        margin-top: 15px;
+ 
+    }
+    
+
+    header .searchBar input {
+        padding: 0px;
+        
+    }
+    header .searchBar button {
+        padding: 0px;
+        background-color:var(--Grisclaro);
+        
+    }
+    header h4 {
+        bottom: 4.6rem;
+     position: relative;
+     text-align: end;
+     font-size: 9px;
+    }
+    header .nav1{
+        padding: 10px;
+        display: flex;
+      
+    }
+    header .nav1 ul, .nav2 ul{
+        display: flex;
+    }
+    header .nav1 li,.nav2 li{
+        font-size: 15px;
+        padding-inline: 5px;
+        
+    }
+    header .nav2 {
+        bottom: 28px;
+        position: relative;
+        /* top: -22px; */
+        display: flex;
+        justify-content: end;
+    }
+    header .burger{
         display: block;
-    }
-
-    header .burger i{
-        display: none;
-    
-    }
-
-    
-
-}
-/* deskotop */
+    }}
+/* }
 @media (min-width:769px){
+    header .nav2 li{
+        font-size: 15px;
+    }
+    header .nav1 li{
+        font-size: 15px;
+    }
     
-}
+} */
