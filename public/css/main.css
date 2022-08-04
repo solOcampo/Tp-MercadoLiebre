@@ -7,15 +7,18 @@ main .banner{
     display: none;
 }
 main section{
+    flex-wrap: wrap;
     padding: 20px 0;
 
 }
 main section h2{
+    width: 100%;
     font-size: var(--titulares);
     color: var(--Grisoscuro);
 
 }
 main section article{
+   
     margin: 10px 0;
     
 }
@@ -41,22 +44,18 @@ main section article .camion {
     justify-content: flex-end;
 }
 main .contenedor .descuento{
+    font-size: 15px;
     display: flex;
     position: relative;
-    bottom: 35px;
+    bottom: 18px;
+    font-size: 12px;
     flex-wrap: wrap;
     margin-left: 80px;
 }
 
- main section article h4{
-    /* left: 35px; */
-    top: -35px;
-    position: relative;
-
- }
  p.precio{
     margin-left: 10px;
-    top: -17px;
+   
     position: relative;
 
     } 
@@ -91,23 +90,51 @@ main section article h4{
     display: none;
     margin-top: 20px;
     color: var(--Grisoscuro);
-    font-size: var(--descuentosYdescripciones);
+   
 }
 
 /* tablet */
 @media (min-width:461px){
-
+    main .banner{
+        display: block;
+    }
+    main .banner img{
+        width: 100%;
+    }
+    
     main section article{
-        box-shadow: 0px 0px 10px var(--Grisoscuro);
+     width: 48%;
+        
+    }
+    
+    main section{
+     flex-wrap: wrap;
+     display: flex;
+     justify-content: space-between;
+    
     }
     main section article h4{
-        margin-left: 10px;
+        padding: 0px 10px 10px 0px;
         display: block;
+        margin-left: 10px;
+        margin-top: 1px;
+        color: var(--Grisoscuro);
+       
     }
  
 }
     
 /* deskotop */
 @media (min-width:769px){
+    main section{
+     flex-wrap: wrap;
+     display: flex;
+     justify-content: space-between;
+    
+    }
+    main section article{
+        width: 24%;
+           
+    }
     
 }

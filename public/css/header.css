@@ -1,106 +1,117 @@
-header{
-   padding: 20px 0;
+.home header{
+    padding: 20px 0;
     background-color:var(--Amarillo);
-    /* font-size: var(--cuerpo-de-texto); */
-  
+}
+.home header .main-header{
+    padding: 20px;
+ }
+.home header .main-header .logo img{
+    width: 70%;
+ }
+ .home header .main-header .logo{
+    width: 50%;
+ }
+.home header .searchBar {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    bottom: 2.8rem;
+}
+.home header .searchBar input{
+    border: solid 1px var( --Grisclaro);
+    display: block;
+    width: 50%;
+    padding: 7px 35px 7px 7px;
+    border-radius: 3px;
+    font-size: 1em;
 
 }
-header .logo{
-    width: 35%;
-}
-
-header .searchBar{
-    position: absolute;
-    top:1;
-    display: inline-flex;
-}
-header .searchBar input{
+.home header .searchBar button{
+    padding: 3px;
     background-color: white;
-    padding: 10px; 
-    margin-left: 8px;
-    border: none;
+    border-radius: 0 4px 4px 0;
+    border:none;
 }
 
-header .searchBar button{
-    background-color: white;
-    border: none;
-}
-header h4{
-    margin: 20px 0;
+ .home header p{
+  margin-top: 20px;
+    text-align: center;
+ }
+ .home header nav{
+    display: none;
+ }
+
+.home header .burger{
     text-align: center;
 
 }
-header .nav1, .nav2{
-    display: none;
- 
 
-}
-
-header .burger{
-    padding: 10px;
-    display: block;
-    margin: 0 auto;
+.home header .burger i{
     background-color: var(--Celeste);
-    font-size: 25px;
     color: white;
-    border-radius: 5px;
-    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: var(--titulares);
+
+} 
+/* tablet */
+@media (min-width:769px){
+    .home header .main-header .logo img {
+        width: 60%;
+    }
+    .home header .searchBar {
+         position: relative;
+        bottom: 3rem;
+        justify-content: center;
+       
+    }
+    .home header p {
+      font-size: 14px;
+      position: relative;
+      text-align: end;
+      bottom: 6rem;
+    }
+    .home header .searchBar input {
+        font-size: 10px;
+        width: 20%;
+        padding: 1px;
+     
+    }
+    .home header .searchBar button {
+        padding: 3px;
+        background-color: #eee;
+       
+    }
+    
+    .home header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .home header nav ul{
+        margin: 0 auto;
+        font-size: 15px;
+        display: flex;
+    }
+    .home header nav li{
+        margin-right: 15px;
+    }
 }
 
-/* tablet */
-@media (min-width:461px){
-   
-     header .searchBar{
-        margin-top: 15px;
- 
-    }
-    
-
-    header .searchBar input {
-        padding: 0px;
-        
-    }
-    header .searchBar button {
-        padding: 0px;
-        background-color:var(--Grisclaro);
-        
-    }
-    header h4 {
-        bottom: 4.6rem;
-     position: relative;
-     text-align: end;
-     font-size: 9px;
-    }
-    header .nav1{
-        padding: 10px;
-        display: flex;
-      
-    }
-    header .nav1 ul, .nav2 ul{
-        display: flex;
-    }
-    header .nav1 li,.nav2 li{
-        font-size: 15px;
-        padding-inline: 5px;
-        
-    }
-    header .nav2 {
-        bottom: 28px;
-        position: relative;
-        /* top: -22px; */
-        display: flex;
-        justify-content: end;
-    }
-    header .burger{
-        display: block;
-    }}
-/* }
 @media (min-width:769px){
-    header .nav2 li{
-        font-size: 15px;
+    .home header .searchBar {
+        display: flex;
+        justify-content: center;
     }
-    header .nav1 li{
+    .home header p {
+       margin: 10px;
         font-size: 15px;
+       
+     }
+    .home header .links li {
+        font-size: 15px;
+        margin: 5px;
     }
     
-} */
+}  
